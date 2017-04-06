@@ -3,20 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to kurguide's documentation!
-====================================
+Mininet Übung
+=============
 
-Contents:
+Instalationsanleitung
+---------------------
 
-.. toctree::
-   :maxdepth: 2
+Virtualbox Instalalierung
+*************************
 
+Install + Download Virtualbox windows
 
+Mininet VM importierung
+***********************
 
-Indices and tables
-==================
+Download from ...
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+System Beschreibung
+-------------------
