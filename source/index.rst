@@ -21,3 +21,9 @@ Download from ...
 
 System Beschreibung
 -------------------
+
+.. figure:: _static/mininet_network.png
+   :scale: 100 %
+   :alt: Network
+
+   Mininet Netzwerk
