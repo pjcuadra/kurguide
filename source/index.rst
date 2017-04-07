@@ -13,8 +13,6 @@ entire network as shown in the following figure.
    :scale: 100 %
    :alt: Network
 
-   Mininet Netzwerk
-
 This tutorial will guide you through the installation, running and
 troubleshooting everything required for having a virtual network just like the
 one in the picture.
