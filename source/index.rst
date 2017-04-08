@@ -13,8 +13,21 @@ Netzwerk wie in dem untenstehenden Bild erstellt.
    :scale: 100 %
    :alt: Network
 
-   
-Dieses Tutorial wird euch durch die Installtion, Starten der VM und die Problembehebung führen.
+Die Adressen der Router sind in dem Bild nicht dargestellt.
+Der Router besitzt 3 Interfaces, für jedes VLAN existiert eins.
+In der nachstehenden Tabelle sind die Router-Adressen für das jeweilige VLAN dargestellt.
+
++-------+-----------+
+| VLAN | IP Address |
++======+============+
+|   10 | 10.0.0.21  |
++------+------------+
+|   20 | 10.0.0.22  |
++------+------------+
+|   30 | 10.0.0.23  |
++------+------------+
+
+Dieses Tutorial wird euch durch die Installation, Starten der VM und die Problembehebung führen.
 Zum Starten wird eine vollständige VM imporiert, die vorkonfiguriert mit **VirtualBox** exportiert wurde.
 Wenn Ihr schon vertraut seit mit **VirtualBox** könnt Ihr HIERLINKPLS die VM laden. Ansonsten folgt dem Tutorial. 
 
@@ -24,8 +37,8 @@ Wenn Ihr schon vertraut seit mit **VirtualBox** könnt Ihr HIERLINKPLS die VM la
 Installationsanleitung
 ----------------------
 
-Um die .OVA Datei in VirtualBox zu importieren, benötigen wir selbst erstmal **VirtualBox**.
-In den nachfolgenden Sektionen wird die VirtualBox-Installation und Importierung der .OVA Datei erläutert.
+Um die **.OVA** Datei in VirtualBox zu importieren, benötigen wir selbst erstmal **VirtualBox**.
+In den nachfolgenden Sektionen wird die VirtualBox-Installation und Importierung der **.OVA** Datei erläutert.
 
 Virtualbox-Installation
 *************************
@@ -33,14 +46,14 @@ Virtualbox-Installation
 Um **VirtualBox** zu installieren sind folgende Schritte notwendig:
 
   * Klick hier
-    <https://www.virtualbox.org/wiki/Downloads>`_.
+    <https://www.virtualbox.org/wiki/Downloads>
   * Downloaded die Version, die für euer Betriebssystem bestimmt ist.
   * Nach dem Download starten und der Installationsanleitung vom Wizard folgen.
 
 Mininet VM-Importierung
 ***********************
 
-Als erstes ladet hier die VM unter folgendem Link herunter (here)[asfas].
+Als erstes ladet Ihr hier die VM unter folgendem Link herunter (here)[asfas].
 Danach öffnet ihr **VirtualBox** und klickt unter **Datei > Appliance Importieren** oder drückt den
 Shortcut **Ctrl** + **i**.
 
@@ -143,11 +156,11 @@ Stoppen könnt Ihr das Netzwerk über das Skript **Stop Netz**.
    :alt: Stop Script
 
 
-Befehle auf den Host's eingeben
+Befehle auf den Hosts eingeben
 -------------------------------
 
 Um ein Befehl auf einem beliebigen Host abzusetzen müsst Ihr das jeweilige Terminal auf dem Host öffnen.
-Um den Zugriff zu erleichtern, befinden sich auf dem Desktop Terminalverbindungen zu den jeweiligen Host's.
+Um den Zugriff zu erleichtern, befinden sich auf dem Desktop Terminalverbindungen zu den jeweiligen Hosts.
 Als Beispiel wird der Zugriff auf den Host **h2** gezeigt.
 
 .. figure:: _static/console_script.png
@@ -180,7 +193,7 @@ Wireshark benutzen
 
 Wenn ihr eine Netzwerkanalyse für einen bestimmten Host durchführen wollt, müsst ihr Wireshark auf das richtige
 Interface einstellen. Um zum Beispiel eine Analyse für den Port ``h2-eth0`` durchzuführen, müsst Ihr wieder das
-Terminal von **h2** wie in `Befehle auf den Host's eingeben`_ öffnen.
+Terminal von **h2** wie in `Befehle auf den Hosts eingeben`_ öffnen.
 
 In dem Terminal benutzt ihr dann den Befehl
 
@@ -201,7 +214,30 @@ Wähle das  ``h2-eth0`` Interface und klicke auf Start.
 Das ist alles! Du führst nun eine Netzwerkanalyse für das ``h2-eth0`` Interface aus.
 
 .. note::
-  Du kannst so viele Terminalfenster öffnen, wie du möchtest für jeden Host.
+  Für jeden Host könnt Ihr so viele Terminalfenster öffnen, wie Ihr möchtet.
+  
+Ping auf Broadcastadresse
+-------------------------
+
+Wenn Ihr einen Ping auf die Broadcastadresse durchführt, wird im Terminal immer die IP vom Host angezeigt.
+Der Grund hierfür liegt an der VLAN-Simulation von Mininet(Zum jetzigen Zeitpunkt noch keinen Fix gefunden).
+
+.. figure:: _static/h1_broadcast_terminal.png
+   :scale: 100%
+   :align: center
+   :alt: h1_Broadcast
+   
+Um alle Hosts die Antworten zu finden, müsst Ihr Wireshark benutzen. Startet Wireshark wie in `Wireshark benutzen`_.
+Nun könnt Ihr den Befehl abschicken und es sollten alle im gleichen Netz antworten.
+
+.. code::
+
+	ping -b Broadcastadresse
+	
+.. figure:: _static/wireshark_broadcast.png
+   :scale: 100%
+   :align: center
+   :alt: Wireshark_Broadcast
 
 Troubleshooting
 ---------------
