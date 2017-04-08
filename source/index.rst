@@ -6,104 +6,102 @@
 Mininet Übung
 =============
 
-**mininet** is a tool for virtualizing networks. We are going to virtualize an
-entire network as shown in the following figure.
+**mininet** ist ein Tool um virtuelle Netzwerke zu erstellen und zu simulieren. Es wird ein 
+Netzwerk wie in dem untenstehenden Bild erstellt.
 
 .. figure:: _static/mininet_network.png
    :scale: 100 %
    :alt: Network
 
-This tutorial will guide you through the installation, running and
-troubleshooting everything required for having a virtual network just like the
-one in the picture.
-
-For quick starting a **VirtualBox**'s Virtual Machine with all that you will
-need was prepared and can be downloaded from here (fill this in).
+   
+Dieses Tutorial wird euch durch die Installtion, Starten der VM und die Problembehebung führen.
+Zum Starten wird eine vollständige VM imporiert, die vorkonfiguriert mit **VirtualBox** exportiert wurde.
+Wenn Ihr schon vertraut seit mit **VirtualBox** könnt Ihr HIERLINKPLS die VM laden. Ansonsten folgt dem Tutorial. 
 
 .. note::
-  Be aware tha the **VirtualBox** is aprox. 1GB.
+  Die Größe der **VirtualBox** ist ca. 1GB.
 
-Instalationsanleitung
----------------------
+Installationsanleitung
+----------------------
 
-In order to run the provided **VirtualBox**'s VM first we need to install
-**VirtualBox** itself. Then import the VM. The following section will explain
-how to proceed.
+Um die .OVA Datei in VirtualBox zu importieren, benötigen wir selbst erstmal **VirtualBox**.
+In den nachfolgenden Sektionen wird die VirtualBox-Installation und Importierung der .OVA Datei erläutert.
 
-Virtualbox Instalalierung
+Virtualbox-Installation
 *************************
 
-To install **VirutalBox** follow these steps;
+Um **VirtualBox** zu installieren sind folgende Schritte notwendig:
 
-  * Click `here
+  * Klick hier
     <https://www.virtualbox.org/wiki/Downloads>`_.
-  * Download the installer matching your running operating system. For windows,
-    click on **Windows hosts**.
-  * Once it finishes double click and follow the installation wirzard steps
+  * Downloaded die Version, die für euer Betriebssystem bestimmt ist.
+  * Nach dem Download starten und der Installationsanleitung vom Wizard folgen.
 
-Mininet VM importierung
+Mininet VM-Importierung
 ***********************
 
-First you will need to download the VM from (here)[asfas]. Then open
-**VirtualBox** and click on **File > Import Appliance** or hit **Ctrl** +
-**i**. As shown in the following picture.
+Als erstes ladet hier die VM unter folgendem Link herunter (here)[asfas].
+Danach öffnet ihr **VirtualBox** und klickt unter **Datei > Appliance Importieren** oder drückt den
+Shortcut **Ctrl** + **i**.
 
 .. figure:: _static/import-appliance.png
    :scale: 100 %
    :align: center
    :alt: Import
 
-Click on **browse** icon as shown in the following picture.
+Klickt auf **Durchsuchen**.
 
 .. figure:: _static/import_appliance.png
    :scale: 100 %
    :align: center
    :alt: Import
 
-Select the download VM and click **open** as in the following image.
+Wählt die VM aus und klickt auf **öffnen**.
 
 .. figure:: _static/import_file_browser.png
    :scale: 100 %
    :align: center
    :alt: Browse for the VM's file
 
-Then click **Next** as in the following picture.
+Wählt **Weiter** aus.
 
 .. figure:: _static/import_next_click.png
    :scale: 100 %
    :align: center
    :alt: Click next
 
-And finally click **Import**.
+Und als letztes **Import**.
+
+.. note::
+   Ihr könnt der VM mehr RAM oder Prozessorkerne zuweisen.
 
 .. figure:: _static/import_import_click.png
    :scale: 100 %
    :align: center
    :alt: Clicking on import
 
-Wait for the VM to get imported, as shown in the following picture.
+Wartet bis die VM vollständig importiert wurde.
 
 .. figure:: _static/import_wait.png
    :scale: 100 %
    :align: center
    :alt: Wait for the import to finish
 
-VM starten
-----------
+VM-Start
+--------
 
-Once the VM is imported, start the VM by selecting the VM from **VirtualBox**
-list and click on start as shown below.
+Nach der Importierung, wählt die VM aus und startet sie.
 
 .. figure:: _static/start_vm.png
    :scale: 100 %
    :align: center
    :alt: Start Virtual Machine
 
-VM Einloggen
+VM-Einloggen
 ------------
 
-Once the VM is started login into the linux system with the username and
-password **mininet**. As shown in the picture below.
+Wenn die VM gestartet wurde, könnt Ihr euch auf dem Linux-System mit dem Benutzernamen und Passwort
+**mininet** einloggen.
 
 .. figure:: _static/login.png
    :scale: 100 %
@@ -111,11 +109,9 @@ password **mininet**. As shown in the picture below.
    :alt: Login
 
 .. note::
-  While you type the password no characters are actually shown on screen. After
-  you finish typing the passwork just hit ``Enter``.
+  Während der Passworteingabe werden keine Zeichen angezeigt! Einfach das Passwort eingeben und Enter drücken.
 
-After you login the graphical environment should launch. It look like the
-following picture.
+Nach dem Einloggen sollte die Grafische Oberfläche geladen werden.
 
 .. figure:: _static/graphical_env.png
    :scale: 100 %
@@ -123,11 +119,10 @@ following picture.
    :alt: Graphical Environment
 
 
-Netzwerk Starten und Stoppen
-----------------------------
+Netzwerk Start/Stopp
+--------------------
 
-In order to start the virtualized network you will need to execute the
-**Start Netz** script by double click it, as shown below.
+Um das virtuelle Netzwerk zu starten muss die Datei **Start Netz** ausgeführt werden.
 
 .. figure:: _static/start_script.png
    :scale: 100 %
@@ -135,12 +130,12 @@ In order to start the virtualized network you will need to execute the
    :alt: Start Script
 
 .. note::
-  By double click the script it seems that nothing happens but in the background
-  the network is already running. Don't worry the network will only will be
-  started just once, no matter how many times you run the script.
 
-You can stop any time the network if you like by double clicking the
-**Stop Netz** script, shown below.
+  Beim Starten des Skript erweckt es den Anschein, dass nichts passiert. In Wirklichkeit läuft das
+  Netzwerk im Hintergrund schon. Egal wie oft ihr das Skript startet, das Netzwerk wird nur einmalig beim
+  ersten Ausführen des Skripts gestartet. 
+
+Stoppen könnt Ihr das Netzwerk über das Skript **Stop Netz**.
 
 .. figure:: _static/stop_script.png
    :scale: 100 %
@@ -148,68 +143,69 @@ You can stop any time the network if you like by double clicking the
    :alt: Stop Script
 
 
-Running command on Host
------------------------
+Befehle auf den Host's eingeben
+-------------------------------
 
-For running a command on one host you just need to open the host's console.
-For easy access shortcuts have been created to access every host console. For
-instance, if you want to access h2's console double click it shortcut as shown
-below.
+Um ein Befehl auf einem beliebigen Host abzusetzen müsst Ihr das jeweilige Terminal auf dem Host öffnen.
+Um den Zugriff zu erleichtern, befinden sich auf dem Desktop Terminalverbindungen zu den jeweiligen Host's.
+Als Beispiel wird der Zugriff auf den Host **h2** gezeigt.
 
 .. figure:: _static/console_script.png
    :scale: 100 %
    :align: center
    :alt: Console Script
 
-A window as the one shown below will open.
+Das Terminalfenster vom Host **h2** öffnet sich.
 
 .. figure:: _static/console.png
    :scale: 100 %
    :align: center
    :alt: Console
 
-Now, for instance, you can ping another host by running;
+Nun könnt ihr z.B. einen Ping absetzen.
 
 .. code::
 
   ping 10.0.0.11
 
-It should look like;
+Es sollte so aussehen:
 
 .. figure:: _static/ping.png
    :scale: 100 %
    :align: center
    :alt: Ping
 
-Running Wireshark
------------------
+Wireshark benutzen
+------------------
 
-If you want to sniff a network interface of a host you'll have to run Wireshark
-on that host. For example, for sniffing ``h2-eth0`` you should open **h2**
-console as `Running command on Host`_.
+Wenn ihr eine Netzwerkanalyse für einen bestimmten Host durchführen wollt, müsst ihr Wireshark auf das richtige
+Interface einstellen. Um zum Beispiel eine Analyse für den Port ``h2-eth0`` durchzuführen, müsst Ihr wieder das
+Terminal von **h2** wie in `Befehle auf den Host's eingeben`_ öffnen.
+
+In dem Terminal benutzt ihr dann den Befehl
 
 .. code::
 
   wireshark
 
 .. note::
-  A warning might pop-up. Just click **Ok** and continue.
+  Eine Warnung könnte angezeigt werden. Auf OK klicken und ignorieren.
 
-Select the ``h2-eth0`` interface and click on start as shown below.
+Wähle das  ``h2-eth0`` Interface und klicke auf Start.
 
 .. figure:: _static/wireshark.png
    :scale: 100 %
    :align: center
    :alt: Wireshark
 
-That's it! You are sniffing the ``h2-eth0`` interface.
+Das ist alles! Du führst nun eine Netzwerkanalyse für das ``h2-eth0`` Interface aus.
 
 .. note::
-  You can open as many consoles you like for every host.
+  Du kannst so viele Terminalfenster öffnen, wie du möchtest für jeden Host.
 
 Troubleshooting
 ---------------
 
-  * If you double click on a console script and it doesn't open maybe the
-    network hasn't been started yet or you stopped it. Just start it as
-    explained in `Netzwerk Starten und Stoppen`_.
+  * Wenn Ihr auf ein Terminalfenster für einen Host klickt und es öffnet sich nicht, überprüft
+    ob das Netzwerk gestartet oder gestoppt wurde. Einfach starten wie in `Netzwerk Start/Stopp`_ erklärt.
+ 
