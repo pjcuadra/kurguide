@@ -13,6 +13,19 @@ entire network as shown in the following figure.
    :scale: 100 %
    :alt: Network
 
+Please note that the address of the router is not shown in the picture. It
+varies from VLAN to VLAN as follows;
+
++-------+-----------+
+| VLAN | IP Address |
++======+============+
+|   10 | 10.0.0.21  |
++------+------------+
+|   20 | 10.0.0.22  |
++------+------------+
+|   30 | 10.0.0.23  |
++------+------------+
+
 This tutorial will guide you through the installation, running and
 troubleshooting everything required for having a virtual network just like the
 one in the picture.
