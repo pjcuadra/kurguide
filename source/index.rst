@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Mininet Übung
-=============
+Mininet Practice
+================
 
 **mininet** is a tool for virtualizing networks. We are going to virtualize an
 entire network as shown in the following figure.
@@ -36,15 +36,15 @@ need was prepared and can be downloaded from here (fill this in).
 .. note::
   Be aware tha the **VirtualBox** is aprox. 1GB.
 
-Instalationsanleitung
----------------------
+Installation
+------------
 
 In order to run the provided **VirtualBox**'s VM first we need to install
 **VirtualBox** itself. Then import the VM. The following section will explain
 how to proceed.
 
-Virtualbox Instalalierung
-*************************
+Install Virtualbox
+******************
 
 To install **VirutalBox** follow these steps;
 
@@ -54,8 +54,8 @@ To install **VirutalBox** follow these steps;
     click on **Windows hosts**.
   * Once it finishes double click and follow the installation wirzard steps
 
-Mininet VM importierung
-***********************
+Import Mininet's VM
+*******************
 
 First you will need to download the VM from (here)[asfas]. Then open
 **VirtualBox** and click on **File > Import Appliance** or hit **Ctrl** +
@@ -101,8 +101,8 @@ Wait for the VM to get imported, as shown in the following picture.
    :align: center
    :alt: Wait for the import to finish
 
-VM starten
-----------
+Start Mininet's VM
+------------------
 
 Once the VM is imported, start the VM by selecting the VM from **VirtualBox**
 list and click on start as shown below.
@@ -112,8 +112,8 @@ list and click on start as shown below.
    :align: center
    :alt: Start Virtual Machine
 
-VM Einloggen
-------------
+Log into Mininet's VM
+---------------------
 
 Once the VM is started login into the linux system with the username and
 password **mininet**. As shown in the picture below.
@@ -136,8 +136,8 @@ following picture.
    :alt: Graphical Environment
 
 
-Netzwerk Starten und Stoppen
-----------------------------
+Start/Stop the Virtual Network
+------------------------------
 
 In order to start the virtualized network you will need to execute the
 **Start Netz** script by double click it, as shown below.
@@ -220,9 +220,51 @@ That's it! You are sniffing the ``h2-eth0`` interface.
 .. note::
   You can open as many consoles you like for every host.
 
+Ping the Broadcast Address
+--------------------------
+
+When you ping to the Broadcast Address, normally, the command's output shows
+all the responding host's IP Addresses. Because of the simulation of the network
+``ping``'s output shows only the own IP Address. (We haven't found a fix yet)
+
+.. figure:: _static/h1_broadcast_terminal.png
+   :scale: 100%
+   :align: center
+   :alt: h1_Broadcast
+
+To find the Hosts' response you can use Wireshark. Start Wireshark like in
+`Running Wireshark`_. By running;
+
+.. code::
+
+	ping -b <broadcast-address>
+
+Now you can see the IP addresses of the responding host with Wireshark as shown
+in the following picture.
+
+.. figure:: _static/wireshark_broadcast.png
+   :scale: 100%
+   :align: center
+   :alt: Wireshark_Broadcast
+
+Tracing
+-------
+
+``traceroute`` allows you to see the hops and their IP addresses on the way to
+the provided host. More about ``traceroute`` can be found in
+https://de.wikipedia.org/wiki/Traceroute and
+https://linux.die.net/man/8/traceroute. The following picture shows an example
+of a typical ``traceroute`` run.
+
+.. figure:: _static/traceroute.png
+   :scale: 100%
+   :align: center
+   :alt: traceroute
+
+
 Troubleshooting
 ---------------
 
   * If you double click on a console script and it doesn't open maybe the
     network hasn't been started yet or you stopped it. Just start it as
-    explained in `Netzwerk Starten und Stoppen`_.
+    explained in `Start/Stop the Virtual Network`_.
