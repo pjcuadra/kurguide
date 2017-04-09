@@ -6,7 +6,7 @@
 Mininet Übung
 =============
 
-**mininet** ist ein Tool um virtuelle Netzwerke zu erstellen und zu simulieren. Es wird ein 
+**mininet** ist ein Tool um virtuelle Netzwerke zu erstellen und zu simulieren. Es wird ein
 Netzwerk wie in dem untenstehenden Bild erstellt.
 
 .. figure:: _static/mininet_network.png
@@ -29,10 +29,10 @@ In der nachstehenden Tabelle sind die Router-Adressen für das jeweilige VLAN da
 
 Dieses Tutorial wird euch durch die Installation, Starten der VM und die Problembehebung führen.
 Zum Starten wird eine vollständige VM imporiert, die vorkonfiguriert mit **VirtualBox** exportiert wurde.
-Wenn Ihr schon vertraut seit mit **VirtualBox** könnt Ihr HIERLINKPLS die VM laden. Ansonsten folgt dem Tutorial. 
+Wenn Ihr schon vertraut seit mit **VirtualBox** könnt Ihr HIERLINKPLS die VM laden. Ansonsten folgt dem Tutorial.
 
 .. note::
-  Die Größe der **VirtualBox** ist ca. 1GB.
+  Die Größe der **VirtualBox**'s VM ist ca. 1GB.
 
 Installationsanleitung
 ----------------------
@@ -146,7 +146,7 @@ Um das virtuelle Netzwerk zu starten muss die Datei **Start Netz** ausgeführt w
 
   Beim Starten des Skript erweckt es den Anschein, dass nichts passiert. In Wirklichkeit läuft das
   Netzwerk im Hintergrund schon. Egal wie oft ihr das Skript startet, das Netzwerk wird nur einmalig beim
-  ersten Ausführen des Skripts gestartet. 
+  ersten Ausführen des Skripts gestartet.
 
 Stoppen könnt Ihr das Netzwerk über das Skript **Stop Netz**.
 
@@ -215,7 +215,7 @@ Das ist alles! Du führst nun eine Netzwerkanalyse für das ``h2-eth0`` Interfac
 
 .. note::
   Für jeden Host könnt Ihr so viele Terminalfenster öffnen, wie Ihr möchtet.
-  
+
 Ping auf Broadcastadresse
 -------------------------
 
@@ -226,19 +226,19 @@ Der Grund hierfür liegt an der VLAN-Simulation von Mininet(Zum jetzigen Zeitpun
    :scale: 100%
    :align: center
    :alt: h1_Broadcast
-   
+
 Um alle Hosts die Antworten zu finden, müsst Ihr Wireshark benutzen. Startet Wireshark wie in `Wireshark benutzen`_.
 Nun könnt Ihr den Befehl abschicken und es sollten alle im gleichen Netz antworten.
 
 .. code::
 
 	ping -b Broadcastadresse
-	
+
 .. figure:: _static/wireshark_broadcast.png
    :scale: 100%
    :align: center
    :alt: Wireshark_Broadcast
-   
+
 Tracing
 -------
 
@@ -258,4 +258,3 @@ Troubleshooting
 
   * Wenn Ihr auf ein Terminalfenster für einen Host klickt und es öffnet sich nicht, überprüft
     ob das Netzwerk gestartet oder gestoppt wurde. Einfach starten wie in `Netzwerk Start/Stopp`_ erklärt.
- 
