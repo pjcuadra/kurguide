@@ -238,6 +238,20 @@ Nun könnt Ihr den Befehl abschicken und es sollten alle im gleichen Netz antwor
    :scale: 100%
    :align: center
    :alt: Wireshark_Broadcast
+   
+Tracing
+-------
+
+Mit dem Befehl **traceroute** auf Linux könnt Ihr eine Route von einem Host zu einem Ziel vefolgen.
+Dabei wird analysiert, über welche Router und Knoten im Internet euer Datenpaket versendet wird.
+Mehr dazu unter https://de.wikipedia.org/wiki/Traceroute.
+
+Ein Beispiel auf Windows wie eine traceroute aussehen kann.
+
+.. figure:: _static/tracert.png
+   :scale: 100%
+   :align: center
+   :alt: traceroute
 
 Troubleshooting
 ---------------
