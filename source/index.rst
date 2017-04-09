@@ -34,7 +34,7 @@ For quick starting a **VirtualBox**'s Virtual Machine with all that you will
 need was prepared and can be downloaded from here (fill this in).
 
 .. note::
-  Be aware tha the **VirtualBox** is aprox. 1GB.
+  Be aware that the **VirtualBox**'s VM is aprox. 1GB.
 
 Installation
 ------------
