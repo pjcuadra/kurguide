@@ -31,7 +31,8 @@ troubleshooting everything required for having a virtual network just like the
 one in the picture.
 
 For quick starting a **VirtualBox**'s Virtual Machine with all that you will
-need was prepared and can be downloaded from here (fill this in).
+need was prepared and can be downloaded from `here
+<https://drive.google.com/open?id=0B5CU-7IZnfMCUGF0ZndtdE5Gd2c>`_.
 
 .. note::
   Be aware that the **VirtualBox**'s VM is aprox. 1GB.
@@ -57,7 +58,8 @@ To install **VirutalBox** follow these steps;
 Import Mininet's VM
 *******************
 
-First you will need to download the VM from (here)[asfas]. Then open
+First you will need to download the VM from `here
+<https://drive.google.com/open?id=0B5CU-7IZnfMCUGF0ZndtdE5Gd2c>`_. Then open
 **VirtualBox** and click on **File > Import Appliance** or hit **Ctrl** +
 **i**. As shown in the following picture.
 
