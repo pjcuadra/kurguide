@@ -32,7 +32,8 @@ one in the picture.
 
 For quick starting a **VirtualBox**'s Virtual Machine with all that you will
 need was prepared and can be downloaded from `here
-<https://drive.google.com/open?id=0B5CU-7IZnfMCUGF0ZndtdE5Gd2c>`_.
+<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_. The password is
+the password for the course, that you used to access ILIAS.
 
 .. note::
   Be aware that the **VirtualBox**'s VM is aprox. 1GB.
@@ -59,7 +60,8 @@ Import Mininet's VM
 *******************
 
 First you will need to download the VM from `here
-<https://drive.google.com/open?id=0B5CU-7IZnfMCUGF0ZndtdE5Gd2c>`_. Then open
+<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_. The password 
+is the password for the course, that you used to access ILIAS. Then open
 **VirtualBox** and click on **File > Import Appliance** or hit **Ctrl** +
 **i**. As shown in the following picture.
 
