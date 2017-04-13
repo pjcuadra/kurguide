@@ -13,7 +13,6 @@ Netzwerk wie in dem untenstehenden Bild erstellt.
    :scale: 100 %
    :alt: Network
 
-Die Adressen der Router sind in dem Bild nicht dargestellt.
 Der Router besitzt 3 Interfaces, für jedes VLAN existiert eins.
 In der nachstehenden Tabelle sind die Router-Adressen für das jeweilige VLAN dargestellt.
 
