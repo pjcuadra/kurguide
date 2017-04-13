@@ -13,8 +13,7 @@ entire network as shown in the following figure.
    :scale: 100 %
    :alt: Network
 
-Please note that the address of the router is not shown in the picture. It
-varies from VLAN to VLAN as follows;
+Please note that the address of the router varies from VLAN to VLAN as follows;
 
 +-------+-----------+
 | VLAN | IP Address |
@@ -60,7 +59,7 @@ Import Mininet's VM
 *******************
 
 First you will need to download the VM from `here
-<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_. The password 
+<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_. The password
 is the password for the course, that you used to access ILIAS. Then open
 **VirtualBox** and click on **File > Import Appliance** or hit **Ctrl** +
 **i**. As shown in the following picture.
