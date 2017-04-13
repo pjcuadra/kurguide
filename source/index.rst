@@ -30,7 +30,7 @@ In der nachstehenden Tabelle sind die Router-Adressen für das jeweilige VLAN da
 Dieses Tutorial wird euch durch die Installation, Starten der VM und die Problembehebung führen.
 Zum Starten wird eine vollständige VM imporiert, die vorkonfiguriert mit **VirtualBox** exportiert wurde.
 Wenn Ihr schon vertraut seit mit **VirtualBox** könnt Ihr `hier
-<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_. die VM laden. Das
+<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_ die VM laden. Das
 Passwort ist das Kurspasswort, welches Sie zum Beitritt im ILIAS benutzt haben.
 Ansonsten folgt dem Tutorial.
 
