@@ -30,7 +30,9 @@ In der nachstehenden Tabelle sind die Router-Adressen für das jeweilige VLAN da
 Dieses Tutorial wird euch durch die Installation, Starten der VM und die Problembehebung führen.
 Zum Starten wird eine vollständige VM imporiert, die vorkonfiguriert mit **VirtualBox** exportiert wurde.
 Wenn Ihr schon vertraut seit mit **VirtualBox** könnt Ihr `hier
-<https://drive.google.com/open?id=0B5CU-7IZnfMCUGF0ZndtdE5Gd2c>`_. die VM laden. Ansonsten folgt dem Tutorial.
+<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_. die VM laden. Das
+Passwort ist das Kurspasswort, welches Sie zum Beitritt im ILIAS benutzt haben.
+Ansonsten folgt dem Tutorial.
 
 .. note::
   Die Größe der **VirtualBox** ist ca. 1GB.
@@ -55,7 +57,8 @@ Mininet VM-Importierung
 ***********************
 
 Als erstes ladet Ihr hier die VM unter folgendem Link herunter `hier
-<https://drive.google.com/open?id=0B5CU-7IZnfMCUGF0ZndtdE5Gd2c>`_.
+<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_. Das Passwort ist
+das Kurspasswort, welches Sie zum Beitritt im ILIAS benutzt haben.
 Danach öffnet ihr **VirtualBox** und klickt unter **Datei > Appliance Importieren** oder drückt den
 Shortcut **Ctrl** + **i**.
 
