@@ -56,7 +56,7 @@ Mininet VM-Importierung
 ***********************
 
 Als erstes ladet Ihr hier die VM unter folgendem Link herunter `hier
-<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_. Das Passwort ist
+<https://fh-dortmund.sciebo.de/s/DNPSc1fpQsPbdBr>`_. Das Passwort ist
 das Kurspasswort, welches Sie zum Beitritt im ILIAS benutzt haben.
 Danach öffnet ihr **VirtualBox** und klickt unter **Datei > Appliance Importieren** oder drückt den
 Shortcut **Ctrl** + **i**.
