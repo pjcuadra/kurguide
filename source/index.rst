@@ -271,3 +271,7 @@ Troubleshooting
   * If you double click on a console script and it doesn't open maybe the
     network hasn't been started yet or you stopped it. Just start it as
     explained in `Start/Stop the Virtual Network`_.
+
+  * If the mininet does not start, check if in the BIOS Configurtaion the CPU support for 
+    Virtualization is turned on. The names for the Intel and AMD features are 'Intel VT' and 'AMD-V' 
+
