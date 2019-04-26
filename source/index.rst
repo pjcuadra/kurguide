@@ -31,7 +31,7 @@ one in the picture.
 
 For quick starting a **VirtualBox**'s Virtual Machine with all that you will
 need was prepared and can be downloaded from `here
-<https://fh-dortmund.sciebo.de/index.php/s/QO8zB6kD3DAcjqL>`_. The password is
+<https://fh-dortmund.sciebo.de/s/DNPSc1fpQsPbdBr>`_. The password is
 the password for the course, that you used to access ILIAS.
 
 .. note::
