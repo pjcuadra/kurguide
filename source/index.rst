@@ -264,5 +264,5 @@ Troubleshooting
     ob das Netzwerk gestartet oder gestoppt wurde. Einfach starten wie in `Netzwerk Start/Stopp`_ erklärt.
 
   * Falls das mininet nicht startet, überprüft ob in den BIOS-Einstellungen der CPU Support für Virtualisierung 
-    angeschaltet ist. Diese heißen bei Intel: "Intel VT" und bei AMD. "AMD-V"
+    angeschaltet ist. Diese heißen bei Intel: "Intel VT" und bei AMD: "AMD-V"
 
